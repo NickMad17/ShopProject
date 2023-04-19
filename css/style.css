@@ -12,22 +12,19 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Home */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-.home{
+/* Top */
+
+.top{
     background-image: url(../img/bg-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 735px;
-    margin-bottom: 64px;
-}
-
-.container{
-    margin: 0 10%;
-}
-
-section{
     margin-bottom: 64px;
 }
 
@@ -121,10 +118,14 @@ section{
 
 .discounts-items{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-/* .discounts-item{
-} */
+.discounts-item{
+    width: 378px;
+    margin-bottom: 64px;
+}
 
 
 .item__subtitle{
@@ -140,6 +141,7 @@ section{
     font-size: 14px;
     line-height: 17px;
     color: #888888;
+    word-wrap: break-word;
 
     padding-bottom: 12px;
 }
@@ -162,6 +164,10 @@ section{
 
 /* Catalog */
 
+.catalog{
+    margin-bottom: 64px;
+}
+
 .catalog-title{
     font-weight: 600;
     font-size: 48px;
@@ -171,8 +177,52 @@ section{
     padding-bottom: 32px;
 }
 
+.catalog-items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.catalog-item{
+    width: 378px;
+    margin-right: 15px;
+    margin-bottom: 56px;
+}
+
+/* -> Catalog-new */
+
+.catalog-new a{
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.catalog-new a:hover{
+    text-decoration: underline;
+}
+
 /* Footer */
 
+.footer{
+    background-color:#F7F6F6;
+}
+
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+.footer-img{
+    margin-right: 15%;
+}
+
+.footer-menu{
+    max-width: 76px;
+    margin-right: 10%;
+}
 
 .footer-title{
     font-weight: 500;
@@ -182,6 +232,12 @@ section{
 
     padding-bottom: 12px;
 }
+
+.footer-contavt{
+    max-width: 132px;
+    margin-right: 15%;
+}
+
 
 .footer-nav{
     font-weight: 500;
@@ -195,7 +251,16 @@ section{
     text-decoration: underline;
 }
 
+.footer-contact .ss{
+    text-decoration: none;
+}
+
 /* Footer - form */
+
+.footer-form{
+    display: grid;
+    max-width: 275px;
+}
 
 .footer-text{
     font-size: 14px;
@@ -209,12 +274,15 @@ section{
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
-    border-radius: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
+    height: 46px;
+    border-radius: 50px;
     line-height: 18px;
-    color: #C4C4C4;
+    color: black;
+
+    padding: 12px 0 12px 25px;
 }
 
 .footer-btn{
