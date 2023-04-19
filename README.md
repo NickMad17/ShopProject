@@ -1,6 +1,6 @@
 # ShopProject
 //
-https://nickmad17.github.io/ShopProject/
+https://nickmad17.github.io/ShopProject
 //
 
 
