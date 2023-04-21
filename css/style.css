@@ -12,9 +12,9 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.center{
+    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
 }
 
 /* Top */
@@ -25,60 +25,58 @@ body{
     background-size: cover;
     background-position: center;
     height: 735px;
-    margin-bottom: 64px;
 }
 
 /* Header */
 
 
-.header-content{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17px 0;
+    padding: 18px 0;
     border-bottom: 0.5px solid #FFFFFFCC  ;
 }
 
-.header-input{
+.header__nav{
+    display: flex;
+    gap: 32px;
+}
+
+.header__input{
     height: 41px;
     width: 25%;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     padding-left: 32px;
-    box-sizing: border-box;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
     color: #FFFFFF;
     background: transparent;
 }
 
-.header-input::placeholder{
+.header__input::placeholder{
     color: #FFFFFF;
 }
 
-.nav-link{
+.nav__link{
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
     color: #FFFFFF;
-
-    padding-left: 32px;
-    padding-bottom: 10px;
 
 }
 
-.nav-link:hover{
+.nav__link:hover{
     text-decoration:underline
 }
 
 
 /* Tagline */
 
-.tagline-title{
+.tagline__title{
     font-weight: 600;
     font-size: 64px;
     line-height: 70px;
@@ -87,27 +85,31 @@ body{
     padding-bottom: 16px;
 }
 
-.tagline-text{
+.tagline__text{
     font-size: 24px;
     line-height: 32px;
 
     padding-bottom: 16px;
 }
 
-.tagline-link{
+.tagline__link{
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.tagline-link:hover{
+.tagline__link:hover{
     text-decoration: underline;
 }
 
 /* Discounts */
 
-.discounts-title{
+.discounts{
+    margin-top: 64px;
+}
+
+.discounts__title{
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
@@ -115,38 +117,40 @@ body{
 
     padding-bottom: 32px;
 }
-
-.discounts-items{
+/* {Product} */
+.product-content{
     display: flex;
-    justify-content: space-around;
+    gap: 32px;
     flex-wrap: wrap;
+    margin-bottom: 64px
 }
 
-.discounts-item{
+.product{
     width: 378px;
-    margin-bottom: 64px;
+;
 }
 
+/* X{Product}X */
 
-.item__subtitle{
+.product__subtitle{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
 
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
-.item__text{
+.product__text{
     font-size: 14px;
     line-height: 17px;
     color: #888888;
     word-wrap: break-word;
 
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
-.item__prices{
+.product__prices{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -154,7 +158,7 @@ body{
 
 }
 
-.item__old__prices{
+.product__prices_old{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -168,7 +172,7 @@ body{
     margin-bottom: 64px;
 }
 
-.catalog-title{
+.catalog__title{
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
@@ -177,28 +181,20 @@ body{
     padding-bottom: 32px;
 }
 
-.catalog-items{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* -> Catalog-content */
+
+.catalog-content{
+    margin-bottom: 39px;
 }
 
-.catalog-item{
-    width: 378px;
-    margin-right: 15px;
-    margin-bottom: 56px;
-}
-
-/* -> Catalog-new */
-
-.catalog-new a{
+.catalog__link a{
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
     color: #000000;
 }
 
-.catalog-new a:hover{
+.catalog__link a:hover{
     text-decoration: underline;
 }
 
@@ -206,40 +202,36 @@ body{
 
 .footer{
     background-color:#F7F6F6;
-}
-
-.content-box{
     display: flex;
     justify-content: space-between;
     padding-top: 32px;
     padding-bottom: 40px;
 }
 
-.footer-img{
-    margin-right: 15%;
-}
-
-.footer-menu{
+.footer__menu{
     max-width: 76px;
-    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
 }
 
-.footer-title{
+.footer__title{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
-
-    padding-bottom: 12px;
 }
 
-.footer-contavt{
+.footer__contact{
     max-width: 132px;
-    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 
-.footer-nav{
+.footer__nav{
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -247,30 +239,48 @@ body{
     text-decoration: none;
 }
 
-.footer-nav:hover{
+.footer__nav:hover{
     text-decoration: underline;
 }
 
-.footer-contact .ss{
+.footer__contact .ss{
     text-decoration: none;
+    font-size: 29px;
 }
 
+
+.bxl-telegram{
+    font-family: boxicons!important;
+    color: #888888;
+}
+
+.bxl-twitter{
+    font-family: boxicons!important;
+    color: #888888;
+}
+
+.bxl-telegram{
+    font-family: boxicons!important;
+    color: #888888;
+}
 /* Footer - form */
 
 .footer-form{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     max-width: 275px;
 }
 
-.footer-text{
+.footer-form__text{
     font-size: 14px;
     line-height: 16px;
     color: #000000;
 
-    padding-bottom: 16px;
+    padding-bottom: 4px;
 }
 
-.footer-input{
+.footer-form__input{
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -285,7 +295,7 @@ body{
     padding: 12px 0 12px 25px;
 }
 
-.footer-btn{
+.footer-form__btn{
     background: rgba(222, 215, 215, 0.41);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
@@ -298,7 +308,7 @@ body{
     transition: 0.5s;
 }
 
-.footer-btn:hover{
+.footer-form__btn:hover{
     background-color: rgb(0, 0, 0);
     cursor: pointer;
     color: #FFFFFF;
