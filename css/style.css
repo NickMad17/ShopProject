@@ -248,11 +248,6 @@ body{
     text-decoration: underline;
 }
 
-.footer__contact .ss{
-    text-decoration: none;
-    font-size: 29px;
-}
-
 .ss-box{
     display: flex;
     align-items: center;
@@ -262,11 +257,17 @@ body{
 .ss{
     display: flex;
     align-items: center;
+    text-decoration: none;
+    font-size: 29px;
 }
 
 .bx{
-    font-family: boxicons!important;
     color: #888888;
+    transition: 0.5s;
+}
+
+.bx:hover{
+    color: #000000;
 }
 /* Footer - form */
 
