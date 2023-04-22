@@ -57,6 +57,7 @@ body{
 }
 
 .header__input::placeholder{
+    font-family: inherit;
     color: #FFFFFF;
 }
 
@@ -95,12 +96,12 @@ body{
 .tagline__link{
     font-size: 16px;
     line-height: 24px;
-    text-decoration: none;
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 .tagline__link:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Discounts */
@@ -118,6 +119,12 @@ body{
     padding-bottom: 32px;
 }
 /* {Product} */
+
+.prices-box{
+    display: flex;
+    gap: 32px;
+}
+
 .product-content{
     display: flex;
     gap: 32px;
@@ -209,7 +216,6 @@ body{
 }
 
 .footer__menu{
-    max-width: 76px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -224,7 +230,6 @@ body{
 }
 
 .footer__contact{
-    max-width: 132px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -248,18 +253,18 @@ body{
     font-size: 29px;
 }
 
-
-.bxl-telegram{
-    font-family: boxicons!important;
-    color: #888888;
+.ss-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.bxl-twitter{
-    font-family: boxicons!important;
-    color: #888888;
+.ss{
+    display: flex;
+    align-items: center;
 }
 
-.bxl-telegram{
+.bx{
     font-family: boxicons!important;
     color: #888888;
 }
@@ -269,7 +274,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    max-width: 275px;
+ 
 }
 
 .footer-form__text{
@@ -293,6 +298,11 @@ body{
     color: black;
 
     padding: 12px 0 12px 25px;
+}
+
+.footer-form__input::placeholder{
+    font-family: inherit;
+    color: #C4C4C4;
 }
 
 .footer-form__btn{
