@@ -459,6 +459,7 @@ body{
 .sort-catalog__navbar{
     list-style-type: none;
     display: flex;
+    position: relative;
 }
 
 .navbar__item:not(:last-child)::after {
@@ -479,7 +480,25 @@ body{
     line-height: 32px;
 
     text-decoration: none;
+    position: relative;
 }
+
+.navbar__item a::after{
+    content: "";
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #888888; /*задаём цвет линии*/
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.navbar__item a:hover:after,
+.navbar__item a:focus:after{
+    width: 100%;
+ }
+
 
 
 
@@ -524,7 +543,6 @@ body{
     background-image: url(.././img/wrapper.svg);
     background-repeat: no-repeat;
     background-position: right 15px top 50%, 0 0;
-    transition: 3s;
 }
 
 /* Catalog-catalog */
