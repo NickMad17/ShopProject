@@ -131,24 +131,60 @@ body{
     height: 415px;
     grid-column: span 4;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: #000;
 }
 
 .for__item_big{
     grid-column: span 6;
 }
 
-.for__text{
+.for__link{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FFFFFF;
+    
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     
 }
 
-.for__content img{
-    height: 100%;
+/* ---------Items---------- */
+
+.for__item_1{
+    background-image: url(.././img/for-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
 }
+.for__item_2{
+    background-image: url(.././img/for-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.for__item_3{
+    background-image: url(.././img/for-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.for__item_4{
+    background-image: url(.././img/for-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.for__item_5{
+    background-image: url(.././img/for-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
 /* Discounts */
 
 .discounts{
@@ -392,6 +428,126 @@ body{
     cursor: pointer;
     color: #FFFFFF;
 }
+
+/* ______________Katalog.html_____________________ */
+
+/* Top-catalog */
+
+.top-catalog{
+    background-image: url(.././img/bg-catalog.jpg);
+    min-height: 400px
+}
+
+/* Header-catalog */
+
+/* Tagline-catalog */
+
+.tagline-catalog__title{
+    padding-top: 127px;
+}
+
+/* Sort-catalog */
+
+.sort-catalog{
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sort-catalog__navbar{
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar__item:not(:last-child)::after {
+    content: '/';
+    padding-left: 10px;
+    padding-right: 10px;
+
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+.navbar__item a {
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    text-decoration: none;
+}
+
+
+
+.delimiter{
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 10px;
+}
+
+.select-catalog {
+
+    /* задаем фон, стили текста и рамку */
+    background: transparent;
+    border: 1px solid #C4C4C4;
+    color: #000000;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Задаем отступы */
+    padding: 14px 11px 14px 33px;
+
+    /* Убираем браузерную стрелку */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    /* Убираем браузерную обводку */
+    outline: none;
+
+    cursor: pointer;
+  }
+
+.select::-ms-expand {
+    /* убиаем стрелку для Explorrer */
+  display: none;
+}
+
+.select-wrapper{
+    background-image: url(.././img/wrapper.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%, 0 0;
+}
+
+.select-wrapper::before{
+   
+}
+
+/* Catalog-catalog */
+
+.catalog-catalog{
+    margin-top: 41px;
+}
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
 
 /* @Media */
 
