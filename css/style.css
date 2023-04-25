@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 735px;
+    min-height: 735px;
 }
 
 /* Header */
@@ -105,6 +105,50 @@ body{
     color:#888888;
 }
 
+/* For */
+
+.for{
+    margin-top: 64px ;
+}
+
+.for__title{
+        font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+
+    padding-bottom: 32px;
+}
+
+.for__content{
+    display: grid;  
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+.for__item{
+    height: 415px;
+    grid-column: span 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+}
+
+.for__item_big{
+    grid-column: span 6;
+}
+
+.for__text{
+    
+}
+
+.for__content img{
+    height: 100%;
+}
 /* Discounts */
 
 .discounts{
@@ -130,7 +174,6 @@ body{
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
-    margin-bottom: 64px
 }
 
 .product{
@@ -177,7 +220,7 @@ body{
 /* Catalog */
 
 .catalog{
-    margin-bottom: 64px;
+    margin-top: 64px
 }
 
 .catalog__title{
@@ -191,8 +234,12 @@ body{
 
 /* -> Catalog-content */
 
-.catalog-content{
-    margin-bottom: 39px;
+/* .catalog-content{
+
+} */
+
+.catalog__link{
+    margin-top: 39px;
 }
 
 .catalog__link a{
@@ -212,14 +259,26 @@ body{
     background-color:#F7F6F6;
     display: flex;
     justify-content: space-between;
+    margin-top: 64px;
     padding-top: 32px;
     padding-bottom: 40px;
+}
+.footer__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 789px;
+}
+
+.footer__logo{
+    display: block;
 }
 /* Menu-contact-box */
 
 .menu-contact-box{
     display: flex;
-    gap: 90px;
+    flex-wrap: nowrap;
+    gap: 129px;
 }
 
 .footer__menu{
@@ -333,3 +392,21 @@ body{
     cursor: pointer;
     color: #FFFFFF;
 }
+
+/* @Media */
+
+/* @media(max-width:1200px){
+    .footer__logo {
+        display: none;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .header__nav{
+        display: none;
+        
+    }
+    .header__input{
+        display: none;
+    }
+} */
