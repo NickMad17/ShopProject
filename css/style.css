@@ -524,6 +524,7 @@ body{
     background-image: url(.././img/wrapper.svg);
     background-repeat: no-repeat;
     background-position: right 15px top 50%, 0 0;
+    transition: 3s;
 }
 
 /* Catalog-catalog */
