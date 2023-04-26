@@ -20,7 +20,7 @@ body{
 /* Top */
 
 .top{
-    background-image: url(../img/bg-home.jpg);
+    background-image: url(.././img/bg-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -522,7 +522,7 @@ body{
     line-height: 20px;
 
     /* Задаем отступы */
-    padding: 14px 11px 14px 33px;
+    padding: 14px 60px 14px 33px;
 
     /* Убираем браузерную стрелку */
     appearance: none;
@@ -542,7 +542,7 @@ body{
 .select-wrapper{
     background-image: url(.././img/wrapper.svg);
     background-repeat: no-repeat;
-    background-position: right 15px top 50%, 0 0;
+    background-position: right 15px  top 50% ;
 }
 
 /* Catalog-catalog */
