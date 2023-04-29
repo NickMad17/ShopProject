@@ -1,0 +1,123 @@
+/* ______________Katalog.html_____________________ */
+
+/* Top-catalog */
+
+.top-catalog{
+    background-image: url(.././img/bg-catalog.jpg);
+    min-height: 400px
+}
+
+/* Header-catalog */
+
+/* Tagline-catalog */
+
+.tagline-catalog__title{
+    padding-top: 127px;
+}
+
+/* Sort-catalog */
+
+.sort-catalog{
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sort-catalog__navbar{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+
+.navbar__item:not(:last-child)::after {
+    content: '/';
+    padding-left: 10px;
+    padding-right: 10px;
+
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+.navbar__item a {
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar__item a::after{
+    content: "";
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #888888; /*задаём цвет линии*/
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.navbar__item a:hover:after,
+.navbar__item a:focus:after{
+    width: 100%;
+ }
+
+
+
+
+.delimiter{
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 10px;
+}
+
+.select-catalog {
+
+    /* задаем фон, стили текста и рамку */
+    background: transparent;
+    border: 1px solid #C4C4C4;
+    color: #000000;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Задаем отступы */
+    padding: 14px 60px 14px 33px;
+
+    /* Убираем браузерную стрелку */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    /* Убираем браузерную обводку */
+    outline: none;
+
+    cursor: pointer;
+  }
+
+.select::-ms-expand {
+    /* убиаем стрелку для Explorrer */
+  display: none;
+}
+
+.select-wrapper{
+    background-image: url(.././img/wrapper.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px  top 50% ;
+}
+
+/* Catalog-catalog */
+
+.catalog-catalog{
+    margin-top: 41px;
+}
+
+/* footer-catalog */
