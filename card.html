@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>catalog</title>
+    <title>basket</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-    <div class="top-card">
+    <div class="top-basket center">
         <header class="header">
-            <a href="index.html"><img src="./img/logo.svg" alt=""></a>
+            <a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
 
             <input type="text" class="header__input" name="" id="" placeholder="Поиск">
 
@@ -23,8 +23,172 @@
                 <a href="catalog.html" class="nav__link">Каталог</a>
                 <a href="#" class="nav__link">Корзина</a>
             </nav>
-
         </header>
+
+        <h1 class="haeding-big">Корзина</h1>
+
+        
     </div>
+
+    <section class="basket center">
+        <div class="basket__content">
+            <div class="basket__name-box">
+                <p class="basket__name-box_text">Товар</p>
+                <p class="basket__name-box_text">Кол-во</p>
+            </div>
+            <div class="basket__item">
+                <div class="basket__left">
+                    <img src="./img/basket-product-1.jpg" alt="basket-image">
+                    <div class="basket__info">
+                        <h4 class="basket__info_title">Стол MENU</h4>
+                        <p class="basket__info_text">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                        <p class="basket__info_prices">34 000 руб.</p>
+                        <div class="basket__link-box">
+                            <a href="#">Избранные</a>
+                            <a href="#">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="number" value="1" min="1">
+            </div>
+
+            <div class="basket__item">
+                <div class="basket__left">
+                    <img src="./img/basket-product-1.jpg" alt="basket-image">
+                    <div class="basket__info">
+                        <h4 class="basket__info_title">Стол MENU</h4>
+                        <p class="basket__info_text">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                        <p class="basket__info_prices">34 000 руб.</p>
+                        <div class="basket__link-box">
+                            <a href="#">Избранные</a>
+                            <a href="#">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="basket__btn-box">
+                <button href="#" class="btn basket__btn-box_btn">Очистить корзину</button>
+                <button href="#" class="btn basket__btn-box_btn">Продолжить покупки</button>
+            </div>
+        </div>
+        <from class="basket__form">
+            <h3 class="basket__form_title">Оформление заказа</h3>
+            <div class="basket__form_input-box">
+                <input type="text" placeholder="Имя Фамилия">
+                <input type="tel" name="tel" 
+                pattern="2[0-9]{3}-[0-9]{3}" placeholder="+ 7 904 000 80 80">
+                <input type="text" placeholder="Адрес доставки">
+            </div>
+            <div class="basket__form_price">Итого: <span>128 000 руб.</span></div>
+            <button class="btn basket__form_btn"> ОФормить заказ</button>
+            </from>
+        </div>
+    </section>
+
+    <section class="discounts center">
+
+
+        <h2 class="discounts__title">Специальные предложения</h2>
+
+        <div class="product-content">
+
+            <div class="product">
+                <img src="./img/product-1.jpg" alt="product">
+
+                <h3 class="product__subtitle">Люстра VODA</h3>
+
+                <p class="product__text">Основание из полированной нержавеющей стали, придает оригинальный парящий
+                    эффект.</p>
+
+                <div class="prices-box">
+                    <p class="product__prices">120 000 руб.</p>
+
+                    <p class="product__prices product__prices_old">140 000 руб.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-2.jpg" alt="product">
+
+                <h3 class="product__subtitle">Диван RONALD</h3>
+
+                <p class="product__text">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+
+                <div class="prices-box">
+                    <p class="product__prices">156 000 руб.</p>
+
+                    <p class="product__prices product__prices_old">198 000 руб.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-3.jpg" alt="product">
+
+                <h3 class="product__subtitle">Комод VENT</h3>
+
+                <p class="product__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+
+                <div class="prices-box">
+                    <p class="product__prices">34 000 руб.</p>
+
+                    <p class="product__prices product__prices_old">45 000 руб.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer center">
+        <div class="footer__logo">
+            <a href="#"><img src="./img/logo-2.svg" alt=""></a>
+        </div>
+
+        <div class="footer__content">
+            <div class="menu-contact-box">
+                <nav class="footer__menu">
+                    <h4 class="footer__title">Меню</h4>
+
+                    <a href="#" class="footer__nav">Главная</a>
+                    <a href="#" class="footer__nav">Каталог</a>
+                    <a href="#" class="footer__nav">Корзина</a>
+                </nav>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title contact__title">Контакты</h4>
+
+                    <a href="#" class="footer__nav contact__nav">+7 908 800 80 80</a>
+
+                    <a href="mailto:help@interier.com" class="footer__nav contact__nav">help@interier.com</a>
+
+
+                    <div class="ss-box">
+                        <a href="#" class="ss">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                        <a href="#" class="ss">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="ss">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                        <a href="#" class="ss">
+                            <i class='bx bxl-telegram'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" class="footer-form">
+
+                <p class="footer-form__text">Получайте наши новости и обновления</p>
+
+                <input type="email" class="footer-form__input" placeholder="Email Address">
+
+                <button class="footer-form__btn">Подписаться</button>
+
+            </form>
+        </div>
+    </footer>
 </body>
 </html>

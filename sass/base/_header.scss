@@ -1,0 +1,46 @@
+/* Header */
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 0.5px solid $color-text;
+
+
+    &__nav{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__input{
+        height: 41px;
+        width: 25%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 32px;
+        border: 1px solid $color-text;
+        border-radius: 20px;
+        color: $color-text;
+        background: transparent;
+    }
+
+    &__input::placeholder{
+        font-family: inherit;
+        color: $color-text;
+    }
+}
+
+    .nav__link{
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        font-weight: 400;
+        color: $color-text;
+    }
+
+    .nav__link:hover{
+        text-decoration:underline
+    }
