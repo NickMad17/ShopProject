@@ -27,7 +27,7 @@
 
         <h1 class="haeding-big">Корзина</h1>
 
-        
+
     </div>
 
     <section class="basket center">
@@ -41,7 +41,8 @@
                     <img src="./img/basket-product-1.jpg" alt="basket-image">
                     <div class="basket__info">
                         <h4 class="basket__info_title">Стол MENU</h4>
-                        <p class="basket__info_text">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                        <p class="basket__info_text">Для того чтобы трапезничать было приятно, необходим правильный
+                            обеденный стол.</p>
                         <p class="basket__info_prices">34 000 руб.</p>
                         <div class="basket__link-box">
                             <a href="#">Избранные</a>
@@ -49,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-                <input type="number" value="1" min="1">
+                <input class="basket__number" type="number" value="1" min="1">
             </div>
 
             <div class="basket__item">
@@ -57,7 +58,8 @@
                     <img src="./img/basket-product-1.jpg" alt="basket-image">
                     <div class="basket__info">
                         <h4 class="basket__info_title">Стол MENU</h4>
-                        <p class="basket__info_text">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                        <p class="basket__info_text">Для того чтобы трапезничать было приятно, необходим правильный
+                            обеденный стол.</p>
                         <p class="basket__info_prices">34 000 руб.</p>
                         <div class="basket__link-box">
                             <a href="#">Избранные</a>
@@ -65,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <input type="number" value="1" min="1">
+                <input class="basket__number" type="number" value="1" min="1">
             </div>
             <div class="basket__btn-box">
                 <button href="#" class="btn basket__btn-box_btn">Очистить корзину</button>
@@ -76,13 +78,12 @@
             <h3 class="basket__form_title">Оформление заказа</h3>
             <div class="basket__form_input-box">
                 <input type="text" placeholder="Имя Фамилия">
-                <input type="tel" name="tel" 
-                pattern="2[0-9]{3}-[0-9]{3}" placeholder="+ 7 904 000 80 80">
+                <input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="+ 7 904 000 80 80">
                 <input type="text" placeholder="Адрес доставки">
             </div>
             <div class="basket__form_price">Итого: <span>128 000 руб.</span></div>
             <button class="btn basket__form_btn"> ОФормить заказ</button>
-            </from>
+        </from>
         </div>
     </section>
 
@@ -94,7 +95,20 @@
         <div class="product-content">
 
             <div class="product">
-                <img src="./img/product-1.jpg" alt="product">
+                <div class="product__img-link">
+                    <div class="product__link-box">
+
+                        <div class="product__link">
+                            <a href="#"><img src="./img/product-basket-hover.svg" alt=""></a>
+                        </div>
+
+                        <div class="product__link">
+                            <a href="#"><img src="./img/product-heart-hover.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <img src="./img/product-1.jpg" alt="product">
+                </div>
+
 
                 <h3 class="product__subtitle">Люстра VODA</h3>
 
@@ -109,7 +123,19 @@
             </div>
 
             <div class="product">
-                <img src="./img/product-2.jpg" alt="product">
+                <div class="product__img-link">
+                    <div class="product__link-box">
+
+                        <div class="product__link">
+                            <a href="#"><img src="./img/product-basket-hover.svg" alt=""></a>
+                        </div>
+
+                        <div class="product__link">
+                            <a href="#"><img src="./img/product-heart-hover.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <img src="./img/product-2.jpg" alt="product">
+                </div>
 
                 <h3 class="product__subtitle">Диван RONALD</h3>
 
@@ -123,7 +149,19 @@
             </div>
 
             <div class="product">
-                <img src="./img/product-3.jpg" alt="product">
+                <div class="product__img-link">
+                    <div class="product__link-box">
+
+                        <div class="product__link">
+                            <a href="#"><img src="./img/product-basket-hover.svg" alt=""></a>
+                        </div>
+
+                        <div class="product__link">
+                            <a href="#"><img src="./img/product-heart-hover.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <img src="./img/product-3.jpg" alt="product">
+                </div>
 
                 <h3 class="product__subtitle">Комод VENT</h3>
 
@@ -136,6 +174,8 @@
                 </div>
             </div>
 
+        <div class="catalog__link basket-link ">
+            <a href="#">Показать ещё</a>
         </div>
     </section>
 
@@ -191,4 +231,5 @@
         </div>
     </footer>
 </body>
+
 </html>

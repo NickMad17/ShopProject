@@ -97,6 +97,22 @@
         text-decoration-line: none;
     }
 
+    &__number{
+        width: 47px;
+        height: 27px;
+        background: #F7F6F6;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+        color: $color-second;
+        text-align: center;
+
+    }
+
     &__btn-box{
         display: flex;
         gap: 60px;
@@ -134,11 +150,19 @@
             width: 288px;
         }
 
-        &_input-box a{
+        &_input-box input{
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
             color: $color-second;
+            border: none;
+            background-color:transparent;
+            border-bottom: 1px solid #CACDD8;
+        }
+
+        &_input-box input::placeholder{
+        color:$color-second;
+           
         }
 
         &_price{
