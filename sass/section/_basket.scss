@@ -158,12 +158,14 @@
             border: none;
             background-color:transparent;
             border-bottom: 1px solid #CACDD8;
+            outline: 0;
         }
 
         &_input-box input::placeholder{
         color:$color-second;
-           
         }
+
+        
 
         &_price{
             font-weight: 400;
