@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 /* Header */
 .header {
@@ -975,7 +975,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  gap: 7px;
   padding-top: 60px;
 }
 .basket__form {
@@ -1049,6 +1049,9 @@ body {
   line-height: 29px;
   color: #000000;
   margin-top: 64px;
+}
+.basket__form_price span {
+  font-weight: 500;
 }
 .basket__form_btn {
   margin-top: 28px;

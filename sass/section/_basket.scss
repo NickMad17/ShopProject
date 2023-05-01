@@ -13,6 +13,8 @@
     line-height: 70px;
 }
 
+// Basket
+
 .basket{
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -115,7 +117,7 @@
 
     &__btn-box{
         display: flex;
-        gap: 60px;
+        gap: 7px;
         padding-top: 60px;
     }
 
@@ -173,6 +175,10 @@
             line-height: 29px;
             color: $color-second;
             margin-top: 64px;
+        }
+
+        &_price span{
+            font-weight: 500;
         }
 
         &_btn{
