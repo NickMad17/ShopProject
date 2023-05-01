@@ -27,16 +27,15 @@
     gap: 26px;
     top: 11px;
     left: 303px;
-}
-
-.product__link-box a{
     opacity: 0;
     transition: 0.5s;
 }
 
-.product__link-box a:hover{
+.product__img-link:hover  .product__link-box{
     opacity: 1;
 }
+
+
 .product__subtitle{
     font-weight: 500;
     font-size: 24px;

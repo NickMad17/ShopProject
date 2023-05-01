@@ -100,13 +100,13 @@
     }
 
     &__number{
-        width: 47px;
-        height: 27px;
+        font-family: 'Poppins', sans-serif;
+        width: 71px;
+        height: 51px;
         background: #F7F6F6;
         border-radius: 6px;
         outline: none;
         border: none;
-        font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 210%;
@@ -183,6 +183,8 @@
 
         &_btn{
             margin-top: 28px;
+            padding: 10px 63px;
+            text-align: center;
         }
 
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 /* Header */
 .header {
@@ -100,15 +100,12 @@
   gap: 26px;
   top: 11px;
   left: 303px;
-}
-
-.product__link-box a {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.product__link-box a:hover {
+.product__img-link:hover .product__link-box {
   opacity: 1;
 }
 
@@ -852,7 +849,7 @@ body {
 
 /* footer-catalog */
 .top-basket {
-  background-image: url(../.././img/bg-basket.jpg);
+  background-image: url(.././img/bg-basket.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -958,13 +955,13 @@ body {
           text-decoration-line: none;
 }
 .basket__number {
-  width: 47px;
-  height: 27px;
+  font-family: "Poppins", sans-serif;
+  width: 71px;
+  height: 51px;
   background: #F7F6F6;
   border-radius: 6px;
   outline: none;
   border: none;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 210%;
@@ -1055,4 +1052,6 @@ body {
 }
 .basket__form_btn {
   margin-top: 28px;
+  padding: 10px 63px;
+  text-align: center;
 }
