@@ -433,6 +433,13 @@ body {
 .for__item {
   height: 415px;
   grid-column: span 4;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.for__item:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .for__item_big {
@@ -849,7 +856,7 @@ body {
 
 /* footer-catalog */
 .top-basket {
-  background-image: url(.././img/bg-basket.jpg);
+  background-image: url(../.././img/bg-basket.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

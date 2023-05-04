@@ -82,7 +82,12 @@ body{
 .for__item{
     height: 415px;
     grid-column: span 4;
+    transition: all .5s ease-in-out;
 
+}
+
+.for__item:hover{
+    transform: scale(1.04);
 }
 
 .for__item_big{
