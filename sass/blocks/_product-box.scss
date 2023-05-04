@@ -12,13 +12,17 @@
 }
 
 .product{
-    width: ($wtdth-site - $gap*2)/3;
+    width: ($width-desctop - $gap*2)/3;
 }
 
 /* X{Product}X */
 
 .product__img-link{
     position: relative;
+    
+    & img{
+        max-width: 100%;
+    }
 }
 
 .product__link-box{

@@ -1,7 +1,9 @@
 // base
 @import "../sass/base/fonts";
 @import ".././sass/base/vars";
+@import "../sass/base/semant-base";
 // blocks
+@import "../sass/blocks/center";
 @import "../sass/blocks/header";
 @import "../sass/blocks/product-box";
 @import "../sass/blocks/footer";
@@ -10,3 +12,7 @@
 @import "./section/index";
 @import "./section/catalog";
 @import "./section/basket";
+// media Pad
+@import "../sass/media/pad";
+// media Phon
+@import "../sass/media/phon";

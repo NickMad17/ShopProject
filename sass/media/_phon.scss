@@ -1,0 +1,8 @@
+// 375px-768px
+
+@media (max-width:767px){
+    .center{
+        padding-right: calc(50% - 343px/2);
+        padding-left: calc(50% - 343px/2);
+    }
+}

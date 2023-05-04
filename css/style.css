@@ -1,6 +1,23 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 600px);
+}
+
 /* Header */
 .header {
   display: -webkit-box;
@@ -91,6 +108,9 @@
 .product__img-link {
   position: relative;
 }
+.product__img-link img {
+  max-width: 100%;
+}
 
 .product__link-box {
   position: absolute;
@@ -164,7 +184,6 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 789px;
 }
 
 .footer__logo {
@@ -356,23 +375,6 @@
 }
 
 /* Index.html */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-}
-
-.center {
-  padding-right: calc(50% - 600px);
-  padding-left: calc(50% - 600px);
-}
-
 /* Top */
 .top {
   background-image: url(.././img/bg-home.jpg);
@@ -1065,4 +1067,48 @@ body {
 
 .basket-link {
   margin-top: 57px;
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .product-content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .product {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for__item {
+    height: 268px;
+  }
+  .product-content {
+    -webkit-column-gap: 27px;
+       -moz-column-gap: 27px;
+            column-gap: 27px;
+    row-gap: 39px;
+  }
+  .footer__logo {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .product {
+    width: 345px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-right: calc(50% - 171.5px);
+    padding-left: calc(50% - 171.5px);
+  }
 }
