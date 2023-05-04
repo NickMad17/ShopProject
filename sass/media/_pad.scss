@@ -31,6 +31,22 @@
             display: none;
         }
     }
+    // basket
+    .basket{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        &__content{
+            grid-column: span 8;
+            grid-row: 1;
+        }
+
+        &__form{
+            grid-column: span 4;
+            grid-row: 2;
+            
+        }
+    }
 
 }
 @media (min-width: 768px) and (max-width: 833px){

@@ -5,4 +5,27 @@
         padding-right: calc(50% - 343px/2);
         padding-left: calc(50% - 343px/2);
     }
+
+    // basket
+    .basket{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        &__content{
+            grid-column: span 3;
+            grid-row: 1;
+        }
+
+        &__form{
+            grid-column: span 4;
+            grid-row: 2;
+            
+        }
+
+        &__left img{
+            display: none;
+        }
+    }
+
+
 }
