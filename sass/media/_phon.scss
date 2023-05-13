@@ -5,6 +5,87 @@
         padding-right: calc(50% - 343px/2);
         padding-left: calc(50% - 343px/2);
     }
+    .header{
+        padding-top: 32px;
+        border: none;
+        &__nav{
+            display: none;
+        }
+        &__input{
+            display: none;
+        }
+        &__logo img{
+            width: 99px;
+        }
+        &__nav-mob{
+            display: flex;
+            gap: 32px;
+        }
+    }
+
+    .tagline{
+        display: flex;
+        flex-direction: column;
+        &__title{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+
+        &__text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px; 
+            text-align: center;
+        }
+
+        &__link{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    .for{
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__content{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &__item{
+            &:hover{
+                transform: scale(0.96);
+            }
+            grid-column: 1/-1;
+            height: 374px ;
+            
+            &_big{
+                height: 243px;
+            }
+        }
+    }
+
+    .discounts{
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;  
+        }
+    }
+
+    .catalog{
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;  
+        }
+    }
 
     // basket
     .basket{
@@ -25,7 +106,66 @@
         &__left img{
             display: none;
         }
+
+        &__name-box{
+            display: none;
+        }
+
+        &__item{
+            gap:0px;
+            width: 233px;
+        }
+
+        &__btn-box{
+            padding-top: 40px;
+            gap: 14px;
+        }
     }
+
+    .box{
+        border-top: 0.5px solid #CACDD8;
+    }
+
+    .footer{
+        &__content{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        }
+    }
+
+    .menu-contact-box{
+        gap:100px
+    }
+
+    .btn{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .product{
+        &__subtitle{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__prices{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+
+    }
+
 
 
 }
