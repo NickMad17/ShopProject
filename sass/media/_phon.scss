@@ -125,6 +125,11 @@
             grid-column: 1/-1;
             
         }
+        
+        &__left{
+            width: 200px;
+        }
+
         &__left img{
             display: none;
         }
@@ -135,7 +140,6 @@
 
         &__item{
             gap:0px;
-            width: 233px;
         }
 
         &__btn-box{
@@ -179,9 +183,11 @@
     }
 
     .btn{
+        padding: 10px 0px;
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
+        width: 163px;
     }
 
     .product{
@@ -215,4 +221,12 @@
 
 
 
+}
+
+@media (max-width: 344px) {
+    .basket{
+        &__form_input-box{
+            width: 250px;
+        }
+    }
 }

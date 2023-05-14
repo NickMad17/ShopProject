@@ -1240,6 +1240,9 @@ body {
   .basket__form {
     grid-column: 1/-1;
   }
+  .basket__left {
+    width: 200px;
+  }
   .basket__left img {
     display: none;
   }
@@ -1248,7 +1251,6 @@ body {
   }
   .basket__item {
     gap: 0px;
-    width: 233px;
   }
   .basket__btn-box {
     padding-top: 40px;
@@ -1282,9 +1284,11 @@ body {
     gap: 100px;
   }
   .btn {
+    padding: 10px 0px;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    width: 163px;
   }
   .product__subtitle {
     font-weight: 500;
@@ -1306,5 +1310,10 @@ body {
   }
   .product__link {
     width: 12px;
+  }
+}
+@media (max-width: 344px) {
+  .basket__form_input-box {
+    width: 250px;
   }
 }
