@@ -1115,6 +1115,12 @@ body {
   .product {
     width: 345px;
   }
+  .product__link-box {
+    left: 280px;
+  }
+  .product__link {
+    width: 12px;
+  }
 }
 @media (min-width: 580px) and (max-width: 767px) {
   .center {

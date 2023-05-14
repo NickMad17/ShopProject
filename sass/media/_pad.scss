@@ -54,6 +54,13 @@
 
         .product{
             width: 345px;
+            &__link-box{
+                left: 280px;
+            }
+    
+            &__link{
+                width: 12px;
+            }
         }
     
 }
