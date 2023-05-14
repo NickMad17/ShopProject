@@ -35,8 +35,15 @@
     transition: 0.5s;
 }
 
-.product__img-link:hover  .product__link-box{
-    opacity: 1;
+// .product__img-link:hover  .product__link-box{
+//     opacity: 1;
+// }
+
+.product__img-link:hover{
+    cursor: pointer;
+    .product__link-box{
+        opacity: 1;
+    }
 }
 
 .product__subtitle{

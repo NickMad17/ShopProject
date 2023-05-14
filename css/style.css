@@ -128,6 +128,9 @@ body {
   transition: 0.5s;
 }
 
+.product__img-link:hover {
+  cursor: pointer;
+}
 .product__img-link:hover .product__link-box {
   opacity: 1;
 }
@@ -445,6 +448,7 @@ body {
 .for__item:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
+  border-radius: 10px;
 }
 
 .for__item_big {
@@ -1290,5 +1294,11 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+  }
+  .product__link-box {
+    left: 280px;
+  }
+  .product__link {
+    width: 12px;
   }
 }
