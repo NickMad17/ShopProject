@@ -387,7 +387,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 735px;
+  min-height: 100vh;
 }
 
 /* Tagline */
@@ -1076,6 +1076,12 @@ body {
   margin-top: 32px;
 }
 
+@media (min-width: 1025px) and (max-width: 1225px) {
+  .center {
+    padding-left: 5%; /* 16px/1025 */
+    padding-right: 5%; /* 16px/1025 */
+  }
+}
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);

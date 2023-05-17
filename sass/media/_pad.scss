@@ -1,8 +1,10 @@
 // width: 834px-1024px
 
-@media (min-width: 1025px) and(max-width: 1200px){
-    
-    
+@media (min-width: 1025px) and(max-width: 1225px){
+    .center{
+    padding-left: 5% ; /* 16px/1025 */
+    padding-right: 5% ; /* 16px/1025 */
+    }
 }
 
 @media (max-width: 1024px){
