@@ -94,11 +94,10 @@
   }
   
   .bx  {
-    color: #888888;
-    -webkit-transition: 0.5s;
+    color: #888888; 
     transition: 0.5s;
 
-    :hover {
+    &:hover {
       color: #000000;
     }
   }

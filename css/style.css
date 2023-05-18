@@ -274,7 +274,7 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.bx :hover {
+.bx:hover {
   color: #000000;
 }
 
