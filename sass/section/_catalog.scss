@@ -4,16 +4,49 @@
 
 .top-catalog{
     background-image: url(.././img/bg-catalog.jpg);
-    min-height: 400px
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__title{
+        padding-top: 127px;
+    }
 }
 
-/* Header-catalog */
+
+
+/* Catalog */
+
+.catalog{
+    margin-top: 64px
+
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: $color-h2;
+    
+        padding-bottom: 32px;
+    }
+
+    &__link{
+        margin-top: 32px;
+    }
+    
+    &__link a{
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #000000;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
 
 /* Tagline-catalog */
-
-.tagline-catalog__title{
-    padding-top: 127px;
-}
 
 /* Sort-catalog */
 
@@ -23,51 +56,55 @@
     justify-content: space-between;
     align-items: center;
 
+    &__navbar{
+        list-style-type: none;
+        display: flex;
+        position: relative;
+    }
+
 }
 
-.sort-catalog__navbar{
-    list-style-type: none;
-    display: flex;
-    position: relative;
+.navbar{
+    &__item{
+        &:not(:last-child)::after {
+            content: '/';
+            padding-left: 10px;
+            padding-right: 10px;
+        
+            color: #000000;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        & a {
+            color: #000000;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+        
+            text-decoration: none;
+            position: relative;
+
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+                width: 0;/*задаём длинну линии до наведения курсора*/
+                height: 1px; /*задаём ширину линии*/
+                background-color: #888888; /*задаём цвет линии*/
+                transition: width 0.3s ease-out; /*задаём время анимации*/
+            }
+
+            &:hover:after,
+            &:focus:after{
+            width: 100%;
+            }
+        }
+        
+    }
 }
-
-.navbar__item:not(:last-child)::after {
-    content: '/';
-    padding-left: 10px;
-    padding-right: 10px;
-
-    color: #000000;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-  }
-
-.navbar__item a {
-    color: #000000;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-
-    text-decoration: none;
-    position: relative;
-}
-
-.navbar__item a::after{
-    content: "";
-    display: block;
-	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 1px; /*задаём ширину линии*/
-	background-color: #888888; /*задаём цвет линии*/
-	transition: width 0.3s ease-out; /*задаём время анимации*/
-}
-
-.navbar__item a:hover:after,
-.navbar__item a:focus:after{
-    width: 100%;
- }
-
 
 
 
@@ -120,4 +157,3 @@
     margin-top: 41px;
 }
 
-/* footer-catalog */

@@ -1,16 +1,85 @@
 // 300px-768px
 
-@media (min-width: 580px) and (max-width: 767px){
+@media (min-width: 579px) and (max-width: 767px){
     .center{
         padding-right: 16px;
         padding-left: 16px;
     }
+    .catalog{
+        &__title{
+            text-align: center;
+        }
+
+        &__link{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .for{
+        &__title{
+            text-align: center;
+        }
+        &__content{
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0 66px;
+        }
+        &__item{
+            &:hover{
+                transform: scale(0.96);
+            }
+            grid-column: 1/-1;
+            height: 374px ;
+            
+            &_big{
+                height: 243px;
+            }
+        }
+    }
+
+    .discounts{
+        &__title{
+            text-align: center;
+        }
+    }
+
+    .product-content{
+        justify-content: center;
+    }
+
+    .footer{
+        &__content{
+            justify-content: center;
+            column-gap: 20px;
+            row-gap: 130px;
+        }
+    }
+
+    .basket{
+        &__form{
+            grid-column: 1/-1;
+            &_input-box{
+                align-self: center;
+                width: 200px;
+            }
+        }
+
+        &__btn-box{
+            justify-content: center;
+        }
+    }
+
 }
+
 
 @media (max-width: 580px){
     .center{
         padding-right: calc(50% - 343px/2);
         padding-left: calc(50% - 343px/2);
+    }
+
+    .top{
+        height: 100vh;
     }
     .header{
         padding-top: 32px;
@@ -175,6 +244,7 @@
             display: flex;
             gap: 50px;
             justify-content: center;
+                margin: 0 0px;
         }
     }
 
@@ -226,9 +296,73 @@
 // Media Fold
 
 @media (max-width: 344px) {
+    .btn{
+        width: 130px;
+    }
+    .tagline{
+        &__title{
+            font-size: 34px;
+        }
+    }
+    .select-catalog{
+        padding: 10px 37px 10px 10px;
+    }
+
+    .sort-catalog{
+        display: none;
+    }
+    .catalog{
+        &__title{
+            text-align: center;
+        }
+
+        &__link{
+            display: flex;
+            justify-content: center;
+        }
+    }
     .basket{
-        &__form_input-box{
-            width: 250px;
+        &__form{
+            &_input-box{
+                align-self: center;
+                width: 200px;
+            }
+        }
+    }
+
+    .product-content{
+        justify-content: center;
+    }
+    .product{
+        width: 230px;
+        &__link-box{
+            display: none;
+        }
+    }
+
+    .discounts{
+        &__title{
+            text-align: center;
+        }
+    }
+
+    .footer{
+        &__contact-box{
+            display: none;
+        }
+        
+        
+    }
+
+    .footer-form{
+            align-items: center;
+        &__input{
+            padding: auto;
+            width: 230px;
+        }
+
+        &__btn{
+            width: 230px;     
         }
     }
 }

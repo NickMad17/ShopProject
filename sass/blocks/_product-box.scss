@@ -13,69 +13,80 @@
 
 .product{
     width: ($width-desctop - $gap*2)/3;
-}
+    transition: all 0.3s;
+    &:hover{
+        .product__img-link img{
+            border-radius: 10px 10px 0 0;
+        }
+        box-shadow: 10px 5px 5px #00000069;
+        border-radius: 0 10px 10px 0;
+        transform: scale(1.02);
+        
+    }
+
 
 /* X{Product}X */
 
-.product__img-link{
-    position: relative;
-    
-    & img{
-        max-width: 100%;
+    &__img-link{
+        position: relative;
+        
+        
+        & img{
+            max-width: 100%;
+            transition: all 0.3s;
+        }
+
+        &:hover{
+            .product__link-box{
+                opacity: 1;
+            }
+            cursor: pointer;
+            &__link-box{
+                opacity: 1;
+            }
+        }
     }
-}
 
-.product__link-box{
-    position: absolute;
-    display: flex;
-    gap: 26px;
-    top: 11px;
-    left: 303px;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-// .product__img-link:hover  .product__link-box{
-//     opacity: 1;
-// }
-
-.product__img-link:hover{
-    cursor: pointer;
-    .product__link-box{
-        opacity: 1;
+    &__link-box{
+        position: absolute;
+        display: flex;
+        gap: 26px;
+        top: 11px;
+        left: 303px;
+        opacity: 0;
     }
-}
 
-.product__subtitle{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
+    &__subtitle{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
 
-    margin-bottom: 8px;
-}
+        margin-bottom: 8px;
+    }
 
-.product__text{
-    font-size: 14px;
-    line-height: 17px;
-    color: #888888;
-    word-wrap: break-word;
+    &__text{
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        word-wrap: break-word;
 
-    margin-bottom: 12px;
-}
+        margin-bottom: 12px;
+    }
 
-.product__prices{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #050505;
+    &__prices{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
 
-}
 
-.product__prices_old{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    text-decoration-line: line-through;
-    color: #888888;
+        &_old{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            text-decoration-line: line-through;
+            color: #888888;
+        }
+    }
 }

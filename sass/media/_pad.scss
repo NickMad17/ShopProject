@@ -5,6 +5,10 @@
     padding-left: 5% ; /* 16px/1025 */
     padding-right: 5% ; /* 16px/1025 */
     }
+
+    .footer{
+        gap: 20px;
+    }
 }
 
 @media (max-width: 1024px){
@@ -46,12 +50,20 @@
         }
     }
 
+    .top{
+        min-height: 735px;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 833px){
     .center{
         padding-left: 24px;
         padding-right: 24px;
 
+    }
+
+    .top{
+        min-height: 735px;
     }
 
         .product{
