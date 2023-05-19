@@ -972,8 +972,8 @@ body {
 }
 @media (max-width: 580px) {
   .center {
-    padding-right: calc(50% - 171.5px);
-    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 175px);
+    padding-left: calc(50% - 175px);
   }
   .top {
     height: 100vh;

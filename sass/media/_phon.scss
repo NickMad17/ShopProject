@@ -73,10 +73,15 @@
 
 
 @media (max-width: 580px){
+    // .center{
+    //     padding-right: calc(50% - 343px/2);
+    //     padding-left: calc(50% - 343px/2);
+    // }
+
     .center{
-        padding-right: calc(50% - 343px/2);
-        padding-left: calc(50% - 343px/2);
-    }
+        padding-right: calc(50% - 350px/2);    
+        padding-left: calc(50% - 350px/2);    
+    }    
 
     .top{
         height: 100vh;
