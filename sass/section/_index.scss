@@ -47,14 +47,14 @@
 
 .for{
     margin-top: 64px ;
-    .for__title{
-        font-weight: 600;
-    font-size: 48px;
-    line-height: 59px;
-    color: $color-h2;
 
-    padding-bottom: 32px;
-}
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: $color-h2;
+        padding-bottom: 32px;
+    }
 
     &__content{
         display: grid;  

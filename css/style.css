@@ -411,7 +411,7 @@ body {
 .for {
   margin-top: 64px;
 }
-.for .for__title {
+.for__title {
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
@@ -1136,28 +1136,29 @@ body {
     line-height: 15px;
     width: 163px;
   }
-  .product__subtitle {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .product__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .product__prices {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .product__link-box {
-    left: 280px;
-  }
-  .product__link {
-    width: 12px;
-  }
 }
+.product__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.product__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.product__prices {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.product__link-box {
+  left: 280px;
+}
+.product__link {
+  width: 12px;
+}
+
 @media (max-width: 344px) {
   .btn {
     width: 130px;
