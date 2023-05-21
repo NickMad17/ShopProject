@@ -17,9 +17,11 @@
 
 
 /* Catalog */
-
 .catalog{
-    margin-top: 64px
+    margin-top: 64px;
+    &__link{
+        margin-top: 32px;
+    }
 
     &__title{
         font-weight: 600;
@@ -28,10 +30,6 @@
         color: $color-h2;
     
         padding-bottom: 32px;
-    }
-
-    &__link{
-        margin-top: 32px;
     }
     
     &__link a{

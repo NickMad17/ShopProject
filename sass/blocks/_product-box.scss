@@ -37,13 +37,26 @@
         }
 
         &:hover{
-            .product__link-box{
-                opacity: 1;
-            }
             cursor: pointer;
-            &__link-box{
-                opacity: 1;
+
+            .product__link-box{
+                opacity: 1; 
             }
+        }
+    }
+
+    &__link{
+        & a {
+            & img{
+                &:hover{
+                    transform: scale(1.2);
+                }
+
+                &:active{
+                    animation: 0.35s linear 0s circle;
+                }
+            }
+            
         }
     }
 

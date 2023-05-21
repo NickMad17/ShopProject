@@ -13,6 +13,8 @@
 @import "./section/catalog";
 @import "./section/basket";
 // media Pad
-@import "../sass/media/pad";
+@import "./media/pad";
 // media Phon
-@import "../sass/media/phon";
+@import "./media/phon";
+// keyframes
+@import "./keyframes/key.scss";
