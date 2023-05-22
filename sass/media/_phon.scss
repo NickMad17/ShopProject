@@ -79,8 +79,8 @@
     // }
 
     .center{
-        padding-right: calc(50% - 350px/2);    
-        padding-left: calc(50% - 350px/2);    
+        padding-right: calc(50% - 335px/2);    
+        padding-left: calc(50% - 335px/2);    
 
     }    
 
@@ -269,6 +269,10 @@
     
 
     .product{
+        &:hover{
+            transform: scale(0.96);
+        }
+
         &__subtitle{
             font-weight: 500;
             font-size: 18px;

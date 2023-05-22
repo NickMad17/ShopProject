@@ -113,8 +113,8 @@ body {
   -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4117647059);
           box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4117647059);
   border-radius: 0 10px 10px 0;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 .product:hover .product__img-link img {
   border-radius: 10px 10px 0 0;
@@ -979,8 +979,8 @@ body {
 }
 @media (max-width: 580px) {
   .center {
-    padding-right: calc(50% - 175px);
-    padding-left: calc(50% - 175px);
+    padding-right: calc(50% - 167.5px);
+    padding-left: calc(50% - 167.5px);
   }
   .top {
     height: 100vh;
@@ -1142,6 +1142,10 @@ body {
     font-size: 12px;
     line-height: 15px;
     width: 163px;
+  }
+  .product:hover {
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
   }
   .product__subtitle {
     font-weight: 500;
