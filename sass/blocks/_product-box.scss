@@ -46,17 +46,12 @@
     }
 
     &__link{
-        & a {
-            & img{
-                &:hover{
-                    transform: scale(1.2);
-                }
+        &:hover{
+            transform: scale(1.2);
+        }
 
-                &:active{
-                    animation: 0.35s linear 0s circle;
-                }
-            }
-            
+        &_animation{
+            animation: 0.35s linear 0s circle;
         }
     }
 

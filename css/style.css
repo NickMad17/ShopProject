@@ -133,11 +133,11 @@ body {
 .product__img-link:hover .product__link-box {
   opacity: 1;
 }
-.product__link a img:hover {
+.product__link:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.product__link a img:active {
+.product__link_animation {
   -webkit-animation: 0.35s linear 0s circle;
           animation: 0.35s linear 0s circle;
 }
@@ -338,8 +338,6 @@ body {
 .footer-form__btn {
   background: rgba(222, 215, 215, 0.41);
   border: 1px solid #FFFFFF;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   border-radius: 20px;
   width: 275px;
   height: 46px;
