@@ -18,3 +18,73 @@
             transform: rotate(360deg);
   }
 }
+@-webkit-keyframes bounce-bottom {
+  0% {
+    -webkit-transform: translateY(24px);
+            transform: translateY(24px);
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  65% {
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  82% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  93% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes bounce-bottom {
+  0% {
+    -webkit-transform: translateY(24px);
+            transform: translateY(24px);
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  65% {
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  82% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  93% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}

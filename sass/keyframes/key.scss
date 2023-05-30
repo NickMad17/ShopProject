@@ -6,3 +6,44 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes bounce-bottom {
+  0% {
+            transform: translateY(24px);
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+            transform: translateY(12px);
+
+  }
+  65% {
+            transform: translateY(9px);
+
+  }
+  82% {
+
+            transform: translateY(6px);
+
+  }
+  93% {
+            transform: translateY(4px);
+
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+ 
+            transform: translateY(0px);
+
+  }
+  100% {
+
+            transform: translateY(0px);
+
+    opacity: 1;
+  }
+}

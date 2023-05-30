@@ -266,9 +266,12 @@
         width: 163px;
     }
 
-    
+    .product-content{
+        justify-content: center;
+    }
 
     .product{
+        width: 300px;
         &:hover{
             transform: scale(0.96);
         }
